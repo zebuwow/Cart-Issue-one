@@ -2,6 +2,11 @@ public class Item {
     private String description;
     private Double price;
     private int quanity;
+
+    public Item(String descript,  Double cost, int amount){
+        ;
+    }
+
     public String getDescription(){
         return description;
     }
