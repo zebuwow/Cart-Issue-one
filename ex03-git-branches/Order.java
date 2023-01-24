@@ -3,35 +3,18 @@
 public class Order {
 
     private Cart cart;
+    private Customer customer;
 
-    private String customerName;
-    private String customerEmail;
-    private String customerPhone;
+    private int id = 0;
 
-    public Order( Cart c, String n, String e, String p ) {
+    public Order( Cart c, Customer user, String p ) {
         cart = c;
-        customerName = n;
-        customerEmail = e;
-        customerPhone = p;
+        customer = user;
+        id++;
       }
 
-    public double total() {
-
-        return 0.0;
-    }
-
-    public String customerName() {
-      return customerName;
-    }
-    public String customerEmail() {
-      return customerEmail;
-    }
-    public String customerAddress() {
-      return customerPhone;
+    // Receipt Method is not finished 
+    public void receipt() {
+      // TODO: Print order number, customer information, cart, and total.
     }
 }
-
-
-
-
-

@@ -1,7 +1,13 @@
 public class Customer {
     private String name;
     private String email;
-    private int id;
+    private int id = 0;
+
+    public Customer(String n, String e) {
+        name = n;
+        email = e;
+        id++;
+    }
 
     public String getName() {
         return name;
@@ -21,10 +27,6 @@ public class Customer {
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int idToSet) {
-        id = idToSet;
     }
 
     @Override
