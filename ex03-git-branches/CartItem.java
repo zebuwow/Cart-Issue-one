@@ -1,12 +1,16 @@
 public class CartItem {
-  
-  double Price;
-  int Quantity;
+  private Item item;
+  private double subTotal =0;
+  private int Quantity = 0;
 
-  public CartItem() {
-    Price = 0.0;
-    Quantity = 0;
+  public CartItem(Item item){
+    this.item = item;
   }
+  public Item getItem(){
+    return item;
+  
+  }
+  public 
 }
 
 
